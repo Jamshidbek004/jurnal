@@ -1,0 +1,39 @@
+body{
+  /* background-image: url(../jurnallar.jpg); */
+  background-size: cover;
+  display: block;
+} 
+.button-1{
+  width: 150px;
+  height: 45px;
+  border: 2px  solid rgb(43, 43, 43);
+  border-radius: 10px;
+  color: black;
+}
+.button-2{
+  width: 150px;
+  height: 45px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: black;
+}
+.button-1:hover{
+  transition: 1s;
+  color: white;
+  border: 2px solid white;
+  background-color: black;
+  
+}
+.button-2:hover{
+  transition: 1s;
+  color: white;
+  border: 2px solid white;
+  background-color: black;
+}
+.container-2{
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/kitoblar.jpeg);
+  background-size: cover;
+}

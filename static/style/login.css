@@ -1,0 +1,38 @@
+body{
+  background-image: url(../imgs/karta-img.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+.sign-in{
+  width: 380px;
+  height: 450px;
+  border: 0.1px solid white;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5)
+}
+.input-card{
+  width: 330px;
+  position: relative;
+  
+}
+.input{
+  /* width: 400px; */
+  height: 45px;
+  margin-top: 30px;
+  border-radius: 15px;
+  border: none;
+  padding: 20px 20px 20px 20px;
+}
+.font{
+  position: absolute;
+  top: 45px;
+  right: 20px;
+  font-size: 18px;
+}
+.button{
+  width: 130px;
+  height: 45px;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 18px;
+}

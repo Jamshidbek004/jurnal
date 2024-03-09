@@ -1,0 +1,158 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- boostrap -->
+  <link rel="stylesheet" href="{% static 'style/bootstrap.css' %}">
+  <!-- style -->
+  <link rel="stylesheet" href="{% static 'malumotlar/malumotlar.css' %}">
+    <!-- font-awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="{% static 'fonts/font.css' %}">
+</head>
+<body>
+  <div class="active-container">
+    <header>
+      <nav class="navbar d-flex position-fixed w-100">
+      <div class="container "><h4 class="text-light">Elektron <br> Jurnal</h4>
+        <div class="row w-1 d-xl-flex d-none  justify-content-end">
+          <div class="col-5 d-flex justify-content-between">
+            <a class="text-decoration-none text-light " href="{% url 'asosiy' %}">Bosh sahifa</a>
+            <a class="text-decoration-none text-secondary " href="{% url 'jurnallar' %}">Jurnallar</a>
+            <a class="text-decoration-none text-secondary " href="{% url 'yangiliklar' %}">Yangililar</a>
+          </div>
+        </div>
+        <a class="navbar-brand " href="#"></a>
+        <button class="navbar-toggler bg-white d-xl-none d-flex " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end bg-img" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">Elektron <br> jurnal</h5>
+            <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <div class="card1-">
+              <div class="row justify-content-center gap-4">
+                <div class="col-5"><a class="text-decoration-none text-light " href="{% url 'asosiy' %}">Bosh sahifa</a></div>
+                <div class="col-5"><a class="text-decoration-none text-secondary " href="{% url 'jurnallar' %}">Jurnallar</a></div>
+                <div class="col-5"><a class="text-decoration-none text-secondary " href="{% url 'yangiliklar' %}">Yangililar</a></div>div>
+              </div>
+              <form class="d-flex mt-5" role="search" method="get" action="{% url 'search' %}">
+                <input class="form-control me-2" type="search" name="q" placeholder="Jurnal qidirish" aria-label="Search">
+                <button class="btn bg-black text-light" type="submit">Qidirish</button> 
+              </form>
+            </div>
+            <div class="card-2">
+              <div class="row justify-content-center mt-1">
+                <div class="col-4 d-flex justify-content-center gap-4">
+                  <a class="text-decoration-none" href="">
+                    <div class="card1 d-flex justify-content-center align-items-center">
+                      <i class="fa-brands fs-3 text-black fa-instagram"></i>
+                    </div>
+                  </a>
+                  <a class="text-decoration-none"  href="">
+                    <div class="card1 d-flex justify-content-center align-items-center">
+                      <i class="fa-brands fs-3 text-black fa-telegram"></i>
+                    </div>
+                  </a>
+                  <a class="text-decoration-none"  href="">
+                    <div class="card1 d-flex justify-content-center align-items-center">
+                      <i class="fa-brands fs-3 text-black fa-youtube"></i>
+                    </div>
+                  </a>
+                  <a class="text-decoration-none"  href="">
+                    <div class="card1 d-flex justify-content-center align-items-center">
+                      <i class="fa-brands fs-3 text-black fa-facebook"></i>
+                    </div>
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        </nav>
+      </header>
+    <div class="container-1 position-relative bg-img ">
+      <div class="container-2 position-absolute  w-100 h-100 d-flex justify-content-center align-items-center flex-column">
+        
+      </div>
+    </div>
+  </div>
+  <div class="malumot mt-xl-4 mt-md-2 mt-0">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8 col-12    border ">
+          <div class="card2 w-100 bor padding-1 font">
+            <p class="text-secondary mt-4"> <span><i class="fa-solid text-secondary fa-newspaper"></i></span> </p>
+            <h2 class="font-fammily text-center">
+              {{jurnal_detel.nomi}}
+            </h2>
+          </div>
+          <div class="img d-flex justify-content-center w-100  h80 padding-1">
+            <img class="img-fluid " src="{{jurnal_detel.rasm.url}}" alt="">
+          </div>
+          <p class="mt-3 fs-5 padding-1 font-fammily-1">
+           {{jurnal_detel.Text}}
+          </p>
+          <div class="row justify-content-center mt-4">
+            <div class="col-xl-6 col-md-9 col-11 d-flex justify-content-evenly ">
+              <a class="text-decoration-none" href="{{jurnal_detel.fayl.url}}">
+                <div class="button-1 d-flex gap-2 justify-content-center align-items-center">
+                <span><i class="fa-solid fa-download"></i></span>
+                Yuklab olish
+                </div>
+              </a>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div> 
+    </div> 
+  </div>
+  
+    <div class="futter bg-dark mt-5">
+      <div class="container">
+        <div class="row justify-content-center mt-1">
+          <div class="col-xl-4 d-flex justify-content-center gap-4">
+            <a class="text-decoration-none" href="">
+              <div class="card1 d-flex justify-content-center align-items-center">
+                <i class="fa-brands fs-3 text-black fa-instagram"></i>
+              </div>
+            </a>
+            <a class="text-decoration-none"  href="">
+              <div class="card1 d-flex justify-content-center align-items-center">
+                <i class="fa-brands fs-3 text-black fa-telegram"></i>
+              </div>
+            </a>
+            <a class="text-decoration-none"  href="">
+              <div class="card1 d-flex justify-content-center align-items-center">
+                <i class="fa-brands fs-3 text-black fa-youtube"></i>
+              </div>
+            </a>
+            <a class="text-decoration-none"  href="">
+              <div class="card1 d-flex justify-content-center align-items-center">
+                <i class="fa-brands fs-3 text-black fa-facebook"></i>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+        <div class="row justify-content-center mt-3 ">
+          <div class="col-xl-5 col-md-9">
+            <p class="text-light text-center font-size1">Biz ijtimoiy tarmoqlarda kuztib boring !</p>
+            <p class="text-light text-center font-size">Uzbekistan 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+<script src="{% static 'javascript/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'javascript/main.js' %}"></script>
+</html>

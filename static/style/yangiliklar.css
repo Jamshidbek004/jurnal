@@ -1,0 +1,184 @@
+.navbar{
+  width: 100%;
+  min-height: 95px;
+  z-index: 1000;
+  background: rgba(90, 89, 89, 0.1);
+  transition: 0.2s ease;
+}
+.w-1{
+  width: 90%;
+  margin-left: 20px;
+}
+header.scrolled .navbar{
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+}
+.bg-img{
+  background-image: url(../imgs/karta-img.jpg);
+}
+.border-6{
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.offcanvas{
+  height: 100vh;
+}
+.container-1{
+  height: 50vh;
+  background-image: url(../imgs/kitoblar.jpeg);
+  background-size: cover;
+}
+.container-1a{
+  background: rgba(0, 0, 0, 0.5)
+
+}
+.jurnallar{
+  min-height: 200px;
+}
+.img{
+  width:220px;
+  height: 100%;
+  border-radius: 8px;
+}
+.img img{
+  border-radius: 8px;
+  
+}
+.content{
+  width: 710px;
+  border-radius: 8px;
+  padding-bottom: 10px;
+}
+.font-size{
+  font-size: 12px;
+  font-family: 'montserrat';
+  font-weight: 400  ;
+}
+.mb{
+  margin-bottom: 10px;
+}
+.h-80{
+  height: 35px;
+}
+.futter{
+  min-height: 180px;
+}
+.card1{
+  width: 50px;
+  height: 50px;
+  font-size: 23px;
+  margin-top: 20px;
+  border-radius: 50%;
+  background-color: black;
+  border:1px solid rgb(199, 199, 199) ;
+  color: rgb(150, 150, 150);
+}
+.jurnallar .col-5 button{
+  background-color: black;
+}
+.jurnallar .col-5 button:hover{
+  transition: 1s;
+  border: 2px  solid blue;
+  color: white;
+}
+.font-size1{
+  font-size: 20px;
+}
+.form-control:focus{
+  box-shadow: none;
+} 
+.futter{
+  height: 180px;
+}
+.card1{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  font-size: 23px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+.font-size2{
+  font-size: 15px;
+}
+.font-size1{
+  font-size: 20px;
+}
+.form-control:focus{
+  box-shadow: none;
+}
+.bg-img{
+  background-image: url(../imgs/karta-img.jpg);
+}
+.bg-blue{
+  background-color:rgb(210, 201, 201);
+}
+.border-radius-1{
+  border-radius: 10px;
+}
+.padding{
+  padding-right: 40px;
+}
+.card2{
+  width: 400px;
+  height: 140px;
+  background-size: cover ;
+  border: 2px solid red
+  q
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ;
+}
